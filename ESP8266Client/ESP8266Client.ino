@@ -4,9 +4,9 @@
 #include <String.h>
 
 
-/***88
+/***************
  * class Timer
- *******/
+ ***************/
 class Timer {
   private:
     unsigned long _lastTick;
@@ -52,9 +52,9 @@ class Timer {
 };
 
 
-/***
+/**************************
  * class WorkScheduler
- */
+ *************************/
 
 class WorkScheduler {
   private:
