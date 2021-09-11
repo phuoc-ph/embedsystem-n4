@@ -215,11 +215,11 @@ void setup() {
 
   Timer::getInstance()->initialize();
 
-  airHumiditySensorWorkScheduler = new WorkScheduler(10000UL, onAirSensorWork);
+  airHumiditySensorWorkScheduler = new WorkScheduler(30000UL, onAirSensorWork);
   
-  soilHumiditySensorWorkScheduler = new WorkScheduler(10000UL, onSoilSensorWork);
+  soilHumiditySensorWorkScheduler = new WorkScheduler(30000UL, onSoilSensorWork);
   
-  distanceSensorWorkScheduler = new WorkScheduler(10000UL, onDistanceSensorWork);
+  distanceSensorWorkScheduler = new WorkScheduler(30000UL, onDistanceSensorWork);
 }
 
 void setup_wifi() {
