@@ -90,8 +90,8 @@ class WorkScheduler {
  * ESP8266 Client
  */
 
-const char* ssid = "Phongae";
-const char* password = "23101997";
+const char* ssid = "**********";
+const char* password = "*********";
 //const char* mqtt_server = "broker.mqtt-dashboard.com";
 const char* mqtt_server = "broker.emqx.io";
 WiFiClient espClient;
