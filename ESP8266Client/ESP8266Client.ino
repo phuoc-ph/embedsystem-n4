@@ -135,9 +135,9 @@ void onAirSensorWork() {
   //Serial.print("Humidity:");
   //Serial.println(String(h).c_str());
   client.publish(AIR_HUMIDITY_TOPIC, String(h).c_str(), true);
-  if (h < 75.0f) {
+  if (h < 80.0f) {
     digitalWrite(RELAY_FAN, LOW);
-  } else if (h > 80.0f) {
+  } else if (h > 85.0f) {
     digitalWrite(RELAY_FAN, HIGH);
   }
 }
@@ -149,7 +149,7 @@ void onSoilSensorWork() {
   client.publish(SOIL_HUMIDITY_TOPIC, String(percent).c_str(), true);
   if (percent < 60) {
     digitalWrite(RELAY_PUMP, HIGH);
-  } else if (percent > 65) {
+  } else if (percent > 70) {
     digitalWrite(RELAY_PUMP, LOW);
   }
 
